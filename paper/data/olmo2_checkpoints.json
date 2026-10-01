@@ -1,0 +1,627 @@
+{
+ "description": "Figure 6 and Table 4. Ten OLMo-2-7B checkpoints (stage-1 steps; main = the released model after stage-2 mid-training). main_block: block chosen by the rule of App. A; stage_by_block: shared_address (ordinal vector >= 10% designated), whole_state_address (only donor states), content (donor's first token >= 50%), none; peak_fact_address_r2: peak leave-one-word-set-out fact-address R^2 over blocks; at_block_16: cosines of Prop. 3.4 and designated answers scored by the single stated content an answer names.",
+ "model": "allenai/OLMo-2-1124-7B",
+ "fixed_block": 16,
+ "checkpoints": {
+  "step1000": {
+   "tokens_seen": 5000000000,
+   "blocks": 32,
+   "main_block": 22,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "none",
+    "18": "none",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "none",
+    "31": "none"
+   },
+   "peak_fact_address_r2": 0.0002161065450294597,
+   "peak_fact_address_block": 31,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.0919454606400901,
+     "reversed_order_cosine": 0.983631040288726
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.0126953125,
+      "ci": [
+       0.003662109375,
+       0.024169921875
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.012044270833333334,
+      "ci": [
+       0.0032552083333333335,
+       0.023030598958333332
+      ]
+     },
+     "random": {
+      "designated": 0.012044270833333334,
+      "ci": [
+       0.00341796875,
+       0.023030598958333332
+      ]
+     },
+     "ceiling": {
+      "designated": 0.011800130208333334,
+      "ci": [
+       0.0023600260416666665,
+       0.024169921875
+      ]
+     }
+    }
+   }
+  },
+  "step4000": {
+   "tokens_seen": 17000000000,
+   "blocks": 32,
+   "main_block": 22,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "none",
+    "18": "none",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "none",
+    "31": "none"
+   },
+   "peak_fact_address_r2": 0.2873289965395299,
+   "peak_fact_address_block": 11,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.3749264300003108,
+     "reversed_order_cosine": 0.24755026959681622
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.249267578125,
+      "ci": [
+       0.227783203125,
+       0.27001953125
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.162841796875,
+      "ci": [
+       0.14737955729166666,
+       0.17724609375
+      ]
+     },
+     "random": {
+      "designated": 0.16031901041666666,
+      "ci": [
+       0.14567057291666666,
+       0.17447916666666666
+      ]
+     },
+     "ceiling": {
+      "designated": 0.16731770833333334,
+      "ci": [
+       0.15152994791666666,
+       0.18196614583333334
+      ]
+     }
+    }
+   }
+  },
+  "step10000": {
+   "tokens_seen": 42000000000,
+   "blocks": 32,
+   "main_block": 14,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "shared_address",
+    "16": "none",
+    "18": "none",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "none",
+    "31": "none"
+   },
+   "peak_fact_address_r2": 0.5212685308910261,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.6965373876599775,
+     "reversed_order_cosine": -0.6130348416883488
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.500244140625,
+      "ci": [
+       0.48095703125,
+       0.517822265625
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.250732421875,
+      "ci": [
+       0.23250325520833334,
+       0.2692057291666667
+      ]
+     },
+     "random": {
+      "designated": 0.14567057291666666,
+      "ci": [
+       0.139892578125,
+       0.15087890625
+      ]
+     },
+     "ceiling": {
+      "designated": 0.3151041666666667,
+      "ci": [
+       0.2939453125,
+       0.3356119791666667
+      ]
+     }
+    }
+   }
+  },
+  "step25000": {
+   "tokens_seen": 105000000000,
+   "blocks": 32,
+   "main_block": 22,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "none",
+    "18": "none",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "none",
+    "31": "none"
+   },
+   "peak_fact_address_r2": 0.6060335504405747,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.7600849491386169,
+     "reversed_order_cosine": -0.736430435282721
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.639404296875,
+      "ci": [
+       0.623046875,
+       0.655029296875
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.23746744791666666,
+      "ci": [
+       0.219482421875,
+       0.2569173177083333
+      ]
+     },
+     "random": {
+      "designated": 0.113037109375,
+      "ci": [
+       0.10904947916666667,
+       0.116943359375
+      ]
+     },
+     "ceiling": {
+      "designated": 0.2762044270833333,
+      "ci": [
+       0.2557779947916667,
+       0.297607421875
+      ]
+     }
+    }
+   }
+  },
+  "step50000": {
+   "tokens_seen": 210000000000,
+   "blocks": 32,
+   "main_block": 16,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "shared_address",
+    "16": "shared_address",
+    "18": "none",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "none",
+    "31": "none"
+   },
+   "peak_fact_address_r2": 0.7396701320985698,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.7895490313012643,
+     "reversed_order_cosine": -0.7398394718465925
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.67431640625,
+      "ci": [
+       0.650390625,
+       0.6943359375
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.5006510416666666,
+      "ci": [
+       0.4722493489583333,
+       0.5275065104166666
+      ]
+     },
+     "random": {
+      "designated": 0.09334309895833333,
+      "ci": [
+       0.08821614583333333,
+       0.09847005208333333
+      ]
+     },
+     "ceiling": {
+      "designated": 0.5680338541666666,
+      "ci": [
+       0.535400390625,
+       0.597900390625
+      ]
+     }
+    }
+   }
+  },
+  "step99000": {
+   "tokens_seen": 416000000000,
+   "blocks": 32,
+   "main_block": 16,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "shared_address",
+    "16": "shared_address",
+    "18": "shared_address",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "content",
+    "31": "content"
+   },
+   "peak_fact_address_r2": 0.7072422937169307,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.8023757807221871,
+     "reversed_order_cosine": -0.7088983340096624
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.799072265625,
+      "ci": [
+       0.778076171875,
+       0.818359375
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.4598795572916667,
+      "ci": [
+       0.4309895833333333,
+       0.4892578125
+      ]
+     },
+     "random": {
+      "designated": 0.06306966145833333,
+      "ci": [
+       0.057942708333333336,
+       0.06844075520833333
+      ]
+     },
+     "ceiling": {
+      "designated": 0.5587565104166666,
+      "ci": [
+       0.523193359375,
+       0.593505859375
+      ]
+     }
+    }
+   }
+  },
+  "step200000": {
+   "tokens_seen": 839000000000,
+   "blocks": 32,
+   "main_block": 16,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "shared_address",
+    "18": "whole_state_address",
+    "20": "none",
+    "22": "none",
+    "24": "none",
+    "26": "none",
+    "28": "none",
+    "30": "content",
+    "31": "content"
+   },
+   "peak_fact_address_r2": 0.6169125060195204,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.7450121772089704,
+     "reversed_order_cosine": -0.5580001041468792
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.860595703125,
+      "ci": [
+       0.8466796875,
+       0.874755859375
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.21663411458333334,
+      "ci": [
+       0.19295247395833334,
+       0.24129231770833334
+      ]
+     },
+     "random": {
+      "designated": 0.046468098958333336,
+      "ci": [
+       0.041829427083333336,
+       0.05126953125
+      ]
+     },
+     "ceiling": {
+      "designated": 0.2970377604166667,
+      "ci": [
+       0.2620442708333333,
+       0.3317057291666667
+      ]
+     }
+    }
+   }
+  },
+  "step400000": {
+   "tokens_seen": 1678000000000,
+   "blocks": 32,
+   "main_block": 16,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "shared_address",
+    "18": "shared_address",
+    "20": "shared_address",
+    "22": "whole_state_address",
+    "24": "none",
+    "26": "content",
+    "28": "content",
+    "30": "content",
+    "31": "content"
+   },
+   "peak_fact_address_r2": 0.6939433681227999,
+   "peak_fact_address_block": 14,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.8040363220068283,
+     "reversed_order_cosine": -0.654282622161609
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.915283203125,
+      "ci": [
+       0.89404296875,
+       0.933837890625
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.23502604166666666,
+      "ci": [
+       0.21988932291666666,
+       0.250244140625
+      ]
+     },
+     "random": {
+      "designated": 0.020426432291666668,
+      "ci": [
+       0.0166015625,
+       0.024658203125
+      ]
+     },
+     "ceiling": {
+      "designated": 0.3585611979166667,
+      "ci": [
+       0.333740234375,
+       0.3836263020833333
+      ]
+     }
+    }
+   }
+  },
+  "step928646": {
+   "tokens_seen": 3896000000000,
+   "blocks": 32,
+   "main_block": 22,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "none",
+    "16": "whole_state_address",
+    "18": "whole_state_address",
+    "20": "whole_state_address",
+    "22": "whole_state_address",
+    "24": "none",
+    "26": "content",
+    "28": "content",
+    "30": "content",
+    "31": "content"
+   },
+   "peak_fact_address_r2": 0.664950718251458,
+   "peak_fact_address_block": 13,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.7735191379049019,
+     "reversed_order_cosine": -0.5911948257027038
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.891845703125,
+      "ci": [
+       0.868896484375,
+       0.9130859375
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.146484375,
+      "ci": [
+       0.129638671875,
+       0.16357421875
+      ]
+     },
+     "random": {
+      "designated": 0.024820963541666668,
+      "ci": [
+       0.020833333333333332,
+       0.029134114583333332
+      ]
+     },
+     "ceiling": {
+      "designated": 0.24300130208333334,
+      "ci": [
+       0.217041015625,
+       0.2677408854166667
+      ]
+     }
+    }
+   }
+  },
+  "main": {
+   "tokens_seen": null,
+   "blocks": 32,
+   "main_block": 16,
+   "stage_by_block": {
+    "0": "none",
+    "2": "none",
+    "4": "none",
+    "6": "none",
+    "8": "none",
+    "10": "none",
+    "12": "none",
+    "14": "shared_address",
+    "16": "shared_address",
+    "18": "shared_address",
+    "20": "whole_state_address",
+    "22": "whole_state_address",
+    "24": "whole_state_address",
+    "26": "content",
+    "28": "content",
+    "30": "content",
+    "31": "content"
+   },
+   "peak_fact_address_r2": 0.7097062671869798,
+   "peak_fact_address_block": 14,
+   "at_block_16": {
+    "invariance": {
+     "new_names_cosine": 0.847175982682536,
+     "reversed_order_cosine": -0.7837158287162266
+    },
+    "by_content": {
+     "unedited": {
+      "designated": 0.92431640625,
+      "ci": [
+       0.901611328125,
+       0.94384765625
+      ]
+     },
+     "ordinal_vector": {
+      "designated": 0.3306477864583333,
+      "ci": [
+       0.31005859375,
+       0.351318359375
+      ]
+     },
+     "random": {
+      "designated": 0.017822265625,
+      "ci": [
+       0.014811197916666666,
+       0.02099609375
+      ]
+     },
+     "ceiling": {
+      "designated": 0.6180826822916666,
+      "ci": [
+       0.5951334635416666,
+       0.640869140625
+      ]
+     }
+    }
+   }
+  }
+ }
+}

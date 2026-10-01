@@ -1,0 +1,1337 @@
+{
+ "description": "Figure 8: two-place relations (Alice loves Bob), five verbs. active: designated answers for calibrated changes of the queried fact, of the queried argument slot, or both, within the same verb in active contexts; r2: held-out R^2 of five templates per verb and voice; fact/slot_vector_cosine: cosine between verbs (and voices) of the slot-averaged fact-change vectors and of the slot vectors.",
+ "models": {
+  "qwen7b": {
+   "main_block": 20,
+   "verbs": [
+    "loves",
+    "trusts",
+    "helps",
+    "visits",
+    "pays"
+   ],
+   "active": {
+    "ordinal_vector": {
+     "fact": {
+      "mean": 0.8190104166666666,
+      "ci": [
+       0.7911458333333333,
+       0.8450520833333333
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.5151041666666667,
+      "ci": [
+       0.4859375,
+       0.5442708333333334
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.7880208333333334,
+      "ci": [
+       0.7593749999999999,
+       0.8153645833333333
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "ceiling": {
+     "fact": {
+      "mean": 0.9536458333333333,
+      "ci": [
+       0.9403580729166666,
+       0.965625
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.765625,
+      "ci": [
+       0.7453125,
+       0.7854166666666667
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.94921875,
+      "ci": [
+       0.9351562500000001,
+       0.9617187500000001
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_0": {
+     "fact": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.00625,
+      "ci": [
+       0.0026041666666666665,
+       0.010937500000000001
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0005208333333333333,
+      "ci": [
+       0.0,
+       0.0013020833333333335
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_1": {
+     "fact": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.00625,
+      "ci": [
+       0.0026041666666666665,
+       0.0109375
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    }
+   },
+   "r2": {
+    "active_loves": {
+     "fact_x_slot": 0.8325763488986017,
+     "fact_plus_slot": 0.7768950274056108,
+     "fact": 0.4989525864630795,
+     "slot": 0.27794244094253195,
+     "person": -0.005616706063431343
+    },
+    "active_trusts": {
+     "fact_x_slot": 0.8300071163911804,
+     "fact_plus_slot": 0.7655042128948576,
+     "fact": 0.45481904774812065,
+     "slot": 0.3106851651467367,
+     "person": -0.005022749550545269
+    },
+    "active_helps": {
+     "fact_x_slot": 0.8120267487515974,
+     "fact_plus_slot": 0.7695539818389788,
+     "fact": 0.48266012074640674,
+     "slot": 0.28689386109257164,
+     "person": -0.005942418627020718
+    },
+    "active_visits": {
+     "fact_x_slot": 0.8043586912704558,
+     "fact_plus_slot": 0.7610922962103563,
+     "fact": 0.5071302486813171,
+     "slot": 0.2539620475290396,
+     "person": -0.0074026639788846715
+    },
+    "active_pays": {
+     "fact_x_slot": 0.819133556450546,
+     "fact_plus_slot": 0.7579790204819237,
+     "fact": 0.44900479158009654,
+     "slot": 0.30897422890182746,
+     "person": -0.006574741391499606
+    },
+    "passive_loves": {
+     "fact_x_slot": 0.7507545029660361,
+     "fact_plus_slot": 0.6761749572601458,
+     "fact": 0.38849676206422623,
+     "slot": 0.2876781951959203,
+     "person": -0.004825618322101821
+    },
+    "passive_trusts": {
+     "fact_x_slot": 0.7695575793733795,
+     "fact_plus_slot": 0.6920264017673827,
+     "fact": 0.30686457441615567,
+     "slot": 0.38516182735122684,
+     "person": -0.0036982875571798246
+    },
+    "passive_helps": {
+     "fact_x_slot": 0.7894962876235608,
+     "fact_plus_slot": 0.7503069356978022,
+     "fact": 0.41551891788006046,
+     "slot": 0.3347880178177415,
+     "person": -0.0050217485901802306
+    },
+    "passive_visits": {
+     "fact_x_slot": 0.708358472751335,
+     "fact_plus_slot": 0.6551376136514802,
+     "fact": 0.32896033539575564,
+     "slot": 0.3261772782557235,
+     "person": -0.005654372114245687
+    },
+    "passive_pays": {
+     "fact_x_slot": 0.7957214031290559,
+     "fact_plus_slot": 0.7457809104264348,
+     "fact": 0.4522873140837912,
+     "slot": 0.2934935963426444,
+     "person": -0.006170794153707471
+    }
+   },
+   "fact_vector_cosine": {
+    "active_loves": {
+     "active_loves": 0.9999999999999994,
+     "active_trusts": 0.9738253639448519,
+     "active_helps": 0.9555923731667394,
+     "active_visits": 0.9738659531332771,
+     "active_pays": 0.9497385729865364,
+     "passive_loves": 0.8978928345778385,
+     "passive_trusts": 0.8585753096167692,
+     "passive_helps": 0.9067842277590236,
+     "passive_visits": 0.8413660110751993,
+     "passive_pays": 0.9186672870142152
+    },
+    "active_trusts": {
+     "active_loves": 0.9738253639448519,
+     "active_trusts": 0.9999999999999996,
+     "active_helps": 0.9393213581232848,
+     "active_visits": 0.9604905724472589,
+     "active_pays": 0.9558851199864433,
+     "passive_loves": 0.878395614690537,
+     "passive_trusts": 0.8381158305179192,
+     "passive_helps": 0.9002513639231938,
+     "passive_visits": 0.8387793578927996,
+     "passive_pays": 0.9122018906649277
+    },
+    "active_helps": {
+     "active_loves": 0.9555923731667394,
+     "active_trusts": 0.9393213581232848,
+     "active_helps": 0.9999999999999994,
+     "active_visits": 0.9699764059086391,
+     "active_pays": 0.9601161908241945,
+     "passive_loves": 0.9073436864257606,
+     "passive_trusts": 0.8671489964641843,
+     "passive_helps": 0.9315578111463273,
+     "passive_visits": 0.8695076455608467,
+     "passive_pays": 0.9365701189221406
+    },
+    "active_visits": {
+     "active_loves": 0.9738659531332771,
+     "active_trusts": 0.9604905724472589,
+     "active_helps": 0.9699764059086391,
+     "active_visits": 0.9999999999999991,
+     "active_pays": 0.9614521131212092,
+     "passive_loves": 0.9084912611340409,
+     "passive_trusts": 0.8661789066460334,
+     "passive_helps": 0.92994280238874,
+     "passive_visits": 0.8752185015567456,
+     "passive_pays": 0.9339730553685741
+    },
+    "active_pays": {
+     "active_loves": 0.9497385729865364,
+     "active_trusts": 0.9558851199864433,
+     "active_helps": 0.9601161908241945,
+     "active_visits": 0.9614521131212092,
+     "active_pays": 0.9999999999999994,
+     "passive_loves": 0.8858461170102947,
+     "passive_trusts": 0.8514332076613179,
+     "passive_helps": 0.9051210683294634,
+     "passive_visits": 0.8599868897111179,
+     "passive_pays": 0.9282187679016282
+    },
+    "passive_loves": {
+     "active_loves": 0.8978928345778385,
+     "active_trusts": 0.878395614690537,
+     "active_helps": 0.9073436864257606,
+     "active_visits": 0.9084912611340409,
+     "active_pays": 0.8858461170102947,
+     "passive_loves": 0.9999999999999991,
+     "passive_trusts": 0.9529413800277992,
+     "passive_helps": 0.93274000146486,
+     "passive_visits": 0.9209966173692433,
+     "passive_pays": 0.9296036408762646
+    },
+    "passive_trusts": {
+     "active_loves": 0.8585753096167692,
+     "active_trusts": 0.8381158305179192,
+     "active_helps": 0.8671489964641843,
+     "active_visits": 0.8661789066460334,
+     "active_pays": 0.8514332076613179,
+     "passive_loves": 0.9529413800277992,
+     "passive_trusts": 0.999999999999999,
+     "passive_helps": 0.8847541203424011,
+     "passive_visits": 0.8934966515141828,
+     "passive_pays": 0.887467080754714
+    },
+    "passive_helps": {
+     "active_loves": 0.9067842277590236,
+     "active_trusts": 0.9002513639231938,
+     "active_helps": 0.9315578111463273,
+     "active_visits": 0.92994280238874,
+     "active_pays": 0.9051210683294634,
+     "passive_loves": 0.93274000146486,
+     "passive_trusts": 0.8847541203424011,
+     "passive_helps": 0.9999999999999991,
+     "passive_visits": 0.9370690580922636,
+     "passive_pays": 0.9482957321417889
+    },
+    "passive_visits": {
+     "active_loves": 0.8413660110751993,
+     "active_trusts": 0.8387793578927996,
+     "active_helps": 0.8695076455608467,
+     "active_visits": 0.8752185015567456,
+     "active_pays": 0.8599868897111179,
+     "passive_loves": 0.9209966173692433,
+     "passive_trusts": 0.8934966515141828,
+     "passive_helps": 0.9370690580922636,
+     "passive_visits": 0.999999999999999,
+     "passive_pays": 0.8972920284973996
+    },
+    "passive_pays": {
+     "active_loves": 0.9186672870142152,
+     "active_trusts": 0.9122018906649277,
+     "active_helps": 0.9365701189221406,
+     "active_visits": 0.9339730553685741,
+     "active_pays": 0.9282187679016282,
+     "passive_loves": 0.9296036408762646,
+     "passive_trusts": 0.887467080754714,
+     "passive_helps": 0.9482957321417889,
+     "passive_visits": 0.8972920284973996,
+     "passive_pays": 0.9999999999999994
+    }
+   },
+   "slot_vector_cosine": {
+    "active_loves": {
+     "active_loves": 0.9999999999999991,
+     "active_trusts": 0.9017249432667127,
+     "active_helps": 0.6586454831168238,
+     "active_visits": 0.8224668487131984,
+     "active_pays": 0.7503480398484278,
+     "passive_loves": 0.31904303281122515,
+     "passive_trusts": 0.3876182742783219,
+     "passive_helps": 0.06224484399362594,
+     "passive_visits": 0.0960118760643695,
+     "passive_pays": 0.03700960336752303
+    },
+    "active_trusts": {
+     "active_loves": 0.9017249432667127,
+     "active_trusts": 0.9999999999999994,
+     "active_helps": 0.4981689439958454,
+     "active_visits": 0.7094849981893131,
+     "active_pays": 0.7082465310739681,
+     "passive_loves": 0.2545291199935922,
+     "passive_trusts": 0.4387694946106723,
+     "passive_helps": -0.07310536825771326,
+     "passive_visits": -0.03787000865450807,
+     "passive_pays": 0.01735163162311762
+    },
+    "active_helps": {
+     "active_loves": 0.6586454831168238,
+     "active_trusts": 0.4981689439958454,
+     "active_helps": 0.999999999999999,
+     "active_visits": 0.874457321487475,
+     "active_pays": 0.8491339592613957,
+     "passive_loves": 0.33560490240493074,
+     "passive_trusts": 0.0793231837288871,
+     "passive_helps": 0.4459573956407837,
+     "passive_visits": 0.3140232804940935,
+     "passive_pays": 0.296682602080256
+    },
+    "active_visits": {
+     "active_loves": 0.8224668487131984,
+     "active_trusts": 0.7094849981893131,
+     "active_helps": 0.874457321487475,
+     "active_visits": 0.9999999999999991,
+     "active_pays": 0.9050875800728072,
+     "passive_loves": 0.26964788868284906,
+     "passive_trusts": 0.144819960477666,
+     "passive_helps": 0.21714810786237743,
+     "passive_visits": 0.248828671400354,
+     "passive_pays": 0.09289051620036817
+    },
+    "active_pays": {
+     "active_loves": 0.7503480398484278,
+     "active_trusts": 0.7082465310739681,
+     "active_helps": 0.8491339592613957,
+     "active_visits": 0.9050875800728072,
+     "active_pays": 0.9999999999999996,
+     "passive_loves": 0.28643853563324273,
+     "passive_trusts": 0.16852402743446307,
+     "passive_helps": 0.21786003008740104,
+     "passive_visits": 0.18468564513081784,
+     "passive_pays": 0.20999580240371687
+    },
+    "passive_loves": {
+     "active_loves": 0.31904303281122515,
+     "active_trusts": 0.2545291199935922,
+     "active_helps": 0.33560490240493074,
+     "active_visits": 0.26964788868284906,
+     "active_pays": 0.28643853563324273,
+     "passive_loves": 0.9999999999999996,
+     "passive_trusts": 0.6757577649820624,
+     "passive_helps": 0.7373957989220767,
+     "passive_visits": 0.6681127943022588,
+     "passive_pays": 0.7582845242577055
+    },
+    "passive_trusts": {
+     "active_loves": 0.3876182742783219,
+     "active_trusts": 0.4387694946106723,
+     "active_helps": 0.0793231837288871,
+     "active_visits": 0.144819960477666,
+     "active_pays": 0.16852402743446307,
+     "passive_loves": 0.6757577649820624,
+     "passive_trusts": 0.9999999999999993,
+     "passive_helps": 0.29853224062722394,
+     "passive_visits": 0.25769099773978227,
+     "passive_pays": 0.4863895310746141
+    },
+    "passive_helps": {
+     "active_loves": 0.06224484399362594,
+     "active_trusts": -0.07310536825771326,
+     "active_helps": 0.4459573956407837,
+     "active_visits": 0.21714810786237743,
+     "active_pays": 0.21786003008740104,
+     "passive_loves": 0.7373957989220767,
+     "passive_trusts": 0.29853224062722394,
+     "passive_helps": 0.9999999999999993,
+     "passive_visits": 0.8239297570378833,
+     "passive_pays": 0.7259860963275026
+    },
+    "passive_visits": {
+     "active_loves": 0.0960118760643695,
+     "active_trusts": -0.03787000865450807,
+     "active_helps": 0.3140232804940935,
+     "active_visits": 0.248828671400354,
+     "active_pays": 0.18468564513081784,
+     "passive_loves": 0.6681127943022588,
+     "passive_trusts": 0.25769099773978227,
+     "passive_helps": 0.8239297570378833,
+     "passive_visits": 0.9999999999999992,
+     "passive_pays": 0.4806811538392145
+    },
+    "passive_pays": {
+     "active_loves": 0.03700960336752303,
+     "active_trusts": 0.01735163162311762,
+     "active_helps": 0.296682602080256,
+     "active_visits": 0.09289051620036817,
+     "active_pays": 0.20999580240371687,
+     "passive_loves": 0.7582845242577055,
+     "passive_trusts": 0.4863895310746141,
+     "passive_helps": 0.7259860963275026,
+     "passive_visits": 0.4806811538392145,
+     "passive_pays": 0.9999999999999994
+    }
+   }
+  },
+  "gemma4b": {
+   "main_block": 22,
+   "verbs": [
+    "loves",
+    "trusts",
+    "helps",
+    "visits",
+    "pays"
+   ],
+   "active": {
+    "ordinal_vector": {
+     "fact": {
+      "mean": 0.4901041666666667,
+      "ci": [
+       0.4734375,
+       0.5067708333333334
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.6484375,
+      "ci": [
+       0.6239583333333334,
+       0.671875
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.5416666666666667,
+      "ci": [
+       0.52265625,
+       0.5611979166666667
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "ceiling": {
+     "fact": {
+      "mean": 0.9531250000000001,
+      "ci": [
+       0.9421875,
+       0.9635416666666667
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.8645833333333334,
+      "ci": [
+       0.8510416666666668,
+       0.8776041666666667
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.95390625,
+      "ci": [
+       0.9424479166666667,
+       0.9643229166666667
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_0": {
+     "fact": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.0020833333333333333,
+      "ci": [
+       0.0,
+       0.005729166666666667
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_1": {
+     "fact": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.0010416666666666667,
+      "ci": [
+       0.0,
+       0.003125
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    }
+   },
+   "r2": {
+    "active_loves": {
+     "fact_x_slot": 0.6312948138347589,
+     "fact_plus_slot": 0.5698596918395917,
+     "fact": 0.2671487313711416,
+     "slot": 0.3027109604684496,
+     "person": -0.013451337888430448
+    },
+    "active_trusts": {
+     "fact_x_slot": 0.7014568218029393,
+     "fact_plus_slot": 0.6301110441724747,
+     "fact": 0.21560487438702347,
+     "slot": 0.4145061697854515,
+     "person": -0.010881833114787076
+    },
+    "active_helps": {
+     "fact_x_slot": 0.6557742152673611,
+     "fact_plus_slot": 0.5988096328032845,
+     "fact": 0.2569608600888631,
+     "slot": 0.3418487727144208,
+     "person": -0.014050214724502741
+    },
+    "active_visits": {
+     "fact_x_slot": 0.6064334185571433,
+     "fact_plus_slot": 0.5397402110560446,
+     "fact": 0.26725369427756784,
+     "slot": 0.2724865167784757,
+     "person": -0.016226917903438
+    },
+    "active_pays": {
+     "fact_x_slot": 0.6399985373981918,
+     "fact_plus_slot": 0.5782768638676163,
+     "fact": 0.2967546453129042,
+     "slot": 0.28152221855471216,
+     "person": -0.015387634272078454
+    },
+    "passive_loves": {
+     "fact_x_slot": 0.6090284756564908,
+     "fact_plus_slot": 0.5661353940288663,
+     "fact": 0.30961487726193215,
+     "slot": 0.2565205167669349,
+     "person": -0.014824307624264232
+    },
+    "passive_trusts": {
+     "fact_x_slot": 0.6303742068798578,
+     "fact_plus_slot": 0.5773375322086656,
+     "fact": 0.2782887059710739,
+     "slot": 0.29904882623759177,
+     "person": -0.013500462979172179
+    },
+    "passive_helps": {
+     "fact_x_slot": 0.6642878028401673,
+     "fact_plus_slot": 0.6091626039069403,
+     "fact": 0.24104948009026905,
+     "slot": 0.3681131238166714,
+     "person": -0.012100340284181499
+    },
+    "passive_visits": {
+     "fact_x_slot": 0.6811760078842415,
+     "fact_plus_slot": 0.6210131136200507,
+     "fact": 0.26535644400596226,
+     "slot": 0.3556566696140887,
+     "person": -0.011511302488177444
+    },
+    "passive_pays": {
+     "fact_x_slot": 0.7482841740823658,
+     "fact_plus_slot": 0.6754971634644853,
+     "fact": 0.20612796645509024,
+     "slot": 0.4693691970093957,
+     "person": -0.008622874017395699
+    }
+   },
+   "fact_vector_cosine": {
+    "active_loves": {
+     "active_loves": 1.0,
+     "active_trusts": 0.956278584599428,
+     "active_helps": 0.9503332627580293,
+     "active_visits": 0.9475490061308807,
+     "active_pays": 0.9354558292830504,
+     "passive_loves": 0.848274029768025,
+     "passive_trusts": 0.7990359865190543,
+     "passive_helps": 0.8655777827969179,
+     "passive_visits": 0.862593332914357,
+     "passive_pays": 0.8395902158804242
+    },
+    "active_trusts": {
+     "active_loves": 0.956278584599428,
+     "active_trusts": 1.0,
+     "active_helps": 0.9300142951618547,
+     "active_visits": 0.9301875821849784,
+     "active_pays": 0.9197868280585708,
+     "passive_loves": 0.8334014338088126,
+     "passive_trusts": 0.8059347689267806,
+     "passive_helps": 0.8469980290586224,
+     "passive_visits": 0.8384466846990803,
+     "passive_pays": 0.8371699341374038
+    },
+    "active_helps": {
+     "active_loves": 0.9503332627580293,
+     "active_trusts": 0.9300142951618547,
+     "active_helps": 1.0,
+     "active_visits": 0.9552848165982878,
+     "active_pays": 0.9651878525849761,
+     "passive_loves": 0.8038905489958476,
+     "passive_trusts": 0.7519954518157194,
+     "passive_helps": 0.8618339985052773,
+     "passive_visits": 0.8479899287283951,
+     "passive_pays": 0.8060428468811964
+    },
+    "active_visits": {
+     "active_loves": 0.9475490061308807,
+     "active_trusts": 0.9301875821849784,
+     "active_helps": 0.9552848165982878,
+     "active_visits": 1.0,
+     "active_pays": 0.9407945960857683,
+     "passive_loves": 0.7991796901049891,
+     "passive_trusts": 0.762528902665956,
+     "passive_helps": 0.8445259115639915,
+     "passive_visits": 0.8457082967574112,
+     "passive_pays": 0.7976061501905091
+    },
+    "active_pays": {
+     "active_loves": 0.9354558292830504,
+     "active_trusts": 0.9197868280585708,
+     "active_helps": 0.9651878525849761,
+     "active_visits": 0.9407945960857683,
+     "active_pays": 1.0,
+     "passive_loves": 0.7761567594981785,
+     "passive_trusts": 0.7250410007775195,
+     "passive_helps": 0.8439182532659298,
+     "passive_visits": 0.8443728866963528,
+     "passive_pays": 0.7825115458330685
+    },
+    "passive_loves": {
+     "active_loves": 0.848274029768025,
+     "active_trusts": 0.8334014338088126,
+     "active_helps": 0.8038905489958476,
+     "active_visits": 0.7991796901049891,
+     "active_pays": 0.7761567594981785,
+     "passive_loves": 0.9999999999999999,
+     "passive_trusts": 0.9441878691179545,
+     "passive_helps": 0.8937646999350631,
+     "passive_visits": 0.8949991888739484,
+     "passive_pays": 0.915089123526748
+    },
+    "passive_trusts": {
+     "active_loves": 0.7990359865190543,
+     "active_trusts": 0.8059347689267806,
+     "active_helps": 0.7519954518157194,
+     "active_visits": 0.762528902665956,
+     "active_pays": 0.7250410007775195,
+     "passive_loves": 0.9441878691179545,
+     "passive_trusts": 1.0,
+     "passive_helps": 0.8495166545546247,
+     "passive_visits": 0.8518456400980602,
+     "passive_pays": 0.8834656200733894
+    },
+    "passive_helps": {
+     "active_loves": 0.8655777827969179,
+     "active_trusts": 0.8469980290586224,
+     "active_helps": 0.8618339985052773,
+     "active_visits": 0.8445259115639915,
+     "active_pays": 0.8439182532659298,
+     "passive_loves": 0.8937646999350631,
+     "passive_trusts": 0.8495166545546247,
+     "passive_helps": 1.0,
+     "passive_visits": 0.9287808720592617,
+     "passive_pays": 0.8842247169229555
+    },
+    "passive_visits": {
+     "active_loves": 0.862593332914357,
+     "active_trusts": 0.8384466846990803,
+     "active_helps": 0.8479899287283951,
+     "active_visits": 0.8457082967574112,
+     "active_pays": 0.8443728866963528,
+     "passive_loves": 0.8949991888739484,
+     "passive_trusts": 0.8518456400980602,
+     "passive_helps": 0.9287808720592617,
+     "passive_visits": 1.0,
+     "passive_pays": 0.8552492843122153
+    },
+    "passive_pays": {
+     "active_loves": 0.8395902158804242,
+     "active_trusts": 0.8371699341374038,
+     "active_helps": 0.8060428468811964,
+     "active_visits": 0.7976061501905091,
+     "active_pays": 0.7825115458330685,
+     "passive_loves": 0.915089123526748,
+     "passive_trusts": 0.8834656200733894,
+     "passive_helps": 0.8842247169229555,
+     "passive_visits": 0.8552492843122153,
+     "passive_pays": 1.0
+    }
+   },
+   "slot_vector_cosine": {
+    "active_loves": {
+     "active_loves": 1.0,
+     "active_trusts": 0.9168312619377607,
+     "active_helps": 0.8421928959102818,
+     "active_visits": 0.895214498155045,
+     "active_pays": 0.852934687813429,
+     "passive_loves": 0.11470447766587841,
+     "passive_trusts": 0.15483067584042307,
+     "passive_helps": -0.030281695299920842,
+     "passive_visits": -0.12345720749120208,
+     "passive_pays": -0.30388274191308395
+    },
+    "active_trusts": {
+     "active_loves": 0.9168312619377607,
+     "active_trusts": 1.0,
+     "active_helps": 0.8034427991674925,
+     "active_visits": 0.8199335917723382,
+     "active_pays": 0.7870530589448297,
+     "passive_loves": 0.038672856850156,
+     "passive_trusts": 0.161819767797232,
+     "passive_helps": -0.17616410924671197,
+     "passive_visits": -0.2821822997072162,
+     "passive_pays": -0.4489983473710683
+    },
+    "active_helps": {
+     "active_loves": 0.8421928959102818,
+     "active_trusts": 0.8034427991674925,
+     "active_helps": 1.0,
+     "active_visits": 0.8704127774262931,
+     "active_pays": 0.8970306650875636,
+     "passive_loves": 0.0066800628347777995,
+     "passive_trusts": 0.05539756325379969,
+     "passive_helps": 0.09836219037086495,
+     "passive_visits": -0.10613302248243164,
+     "passive_pays": -0.2803463111879179
+    },
+    "active_visits": {
+     "active_loves": 0.895214498155045,
+     "active_trusts": 0.8199335917723382,
+     "active_helps": 0.8704127774262931,
+     "active_visits": 1.0000000000000002,
+     "active_pays": 0.9211068322697823,
+     "passive_loves": 0.11654011418699123,
+     "passive_trusts": 0.14866935388819036,
+     "passive_helps": 0.032352969854675714,
+     "passive_visits": 0.0037520223469897506,
+     "passive_pays": -0.19285570154693593
+    },
+    "active_pays": {
+     "active_loves": 0.852934687813429,
+     "active_trusts": 0.7870530589448297,
+     "active_helps": 0.8970306650875636,
+     "active_visits": 0.9211068322697823,
+     "active_pays": 1.0,
+     "passive_loves": 0.1128266351222375,
+     "passive_trusts": 0.16409847504940012,
+     "passive_helps": 0.06373166271367423,
+     "passive_visits": -0.042508464919389206,
+     "passive_pays": -0.11424603696395001
+    },
+    "passive_loves": {
+     "active_loves": 0.11470447766587841,
+     "active_trusts": 0.038672856850156,
+     "active_helps": 0.0066800628347777995,
+     "active_visits": 0.11654011418699123,
+     "active_pays": 0.1128266351222375,
+     "passive_loves": 1.0,
+     "passive_trusts": 0.8885242036432176,
+     "passive_helps": 0.654193291628693,
+     "passive_visits": 0.6991350731430197,
+     "passive_pays": 0.6864113148178299
+    },
+    "passive_trusts": {
+     "active_loves": 0.15483067584042307,
+     "active_trusts": 0.161819767797232,
+     "active_helps": 0.05539756325379969,
+     "active_visits": 0.14866935388819036,
+     "active_pays": 0.16409847504940012,
+     "passive_loves": 0.8885242036432176,
+     "passive_trusts": 1.0,
+     "passive_helps": 0.434785646115226,
+     "passive_visits": 0.4590978081128993,
+     "passive_pays": 0.5199896950330949
+    },
+    "passive_helps": {
+     "active_loves": -0.030281695299920842,
+     "active_trusts": -0.17616410924671197,
+     "active_helps": 0.09836219037086495,
+     "active_visits": 0.032352969854675714,
+     "active_pays": 0.06373166271367423,
+     "passive_loves": 0.654193291628693,
+     "passive_trusts": 0.434785646115226,
+     "passive_helps": 1.0,
+     "passive_visits": 0.8582946049081946,
+     "passive_pays": 0.6922636416494657
+    },
+    "passive_visits": {
+     "active_loves": -0.12345720749120208,
+     "active_trusts": -0.2821822997072162,
+     "active_helps": -0.10613302248243164,
+     "active_visits": 0.0037520223469897506,
+     "active_pays": -0.042508464919389206,
+     "passive_loves": 0.6991350731430197,
+     "passive_trusts": 0.4590978081128993,
+     "passive_helps": 0.8582946049081946,
+     "passive_visits": 0.9999999999999999,
+     "passive_pays": 0.7560793463138766
+    },
+    "passive_pays": {
+     "active_loves": -0.30388274191308395,
+     "active_trusts": -0.4489983473710683,
+     "active_helps": -0.2803463111879179,
+     "active_visits": -0.19285570154693593,
+     "active_pays": -0.11424603696395001,
+     "passive_loves": 0.6864113148178299,
+     "passive_trusts": 0.5199896950330949,
+     "passive_helps": 0.6922636416494657,
+     "passive_visits": 0.7560793463138766,
+     "passive_pays": 0.9999999999999998
+    }
+   }
+  },
+  "llama8b": {
+   "main_block": 15,
+   "verbs": [
+    "loves",
+    "trusts",
+    "helps",
+    "visits",
+    "pays"
+   ],
+   "active": {
+    "ordinal_vector": {
+     "fact": {
+      "mean": 0.21875,
+      "ci": [
+       0.19791666666666666,
+       0.24037109374999993
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.3359375,
+      "ci": [
+       0.3119661458333333,
+       0.3609375
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.3385416666666667,
+      "ci": [
+       0.31457682291666667,
+       0.3645833333333333
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "ceiling": {
+     "fact": {
+      "mean": 0.8609374999999999,
+      "ci": [
+       0.84375,
+       0.8778645833333334
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.6161458333333334,
+      "ci": [
+       0.5932291666666667,
+       0.6390625
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.903125,
+      "ci": [
+       0.8846354166666668,
+       0.92109375
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_0": {
+     "fact": {
+      "mean": 0.00026041666666666666,
+      "ci": [
+       0.0,
+       0.00078125
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.009895833333333333,
+      "ci": [
+       0.0046875,
+       0.016145833333333335
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    },
+    "random_1": {
+     "fact": {
+      "mean": 0.00026041666666666666,
+      "ci": [
+       0.0,
+       0.00078125
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     },
+     "slot": {
+      "mean": 0.01666666666666667,
+      "ci": [
+       0.010416666666666668,
+       0.0234375
+      ],
+      "cases": 1920,
+      "word_sets": 64
+     },
+     "both": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 3840,
+      "word_sets": 64
+     }
+    }
+   },
+   "r2": {
+    "active_loves": {
+     "fact_x_slot": 0.7152799603511341,
+     "fact_plus_slot": 0.6507582184921119,
+     "fact": 0.36525798874895676,
+     "slot": 0.2855002297431568,
+     "person": -0.018583943912482193
+    },
+    "active_trusts": {
+     "fact_x_slot": 0.7056892638191564,
+     "fact_plus_slot": 0.6320935229605039,
+     "fact": 0.3247035230208737,
+     "slot": 0.307389999939632,
+     "person": -0.015671079181737824
+    },
+    "active_helps": {
+     "fact_x_slot": 0.6811344074437824,
+     "fact_plus_slot": 0.6247983839626428,
+     "fact": 0.34362462326991083,
+     "slot": 0.28117376069273226,
+     "person": -0.017268559770513114
+    },
+    "active_visits": {
+     "fact_x_slot": 0.6814364954364407,
+     "fact_plus_slot": 0.6111493134451287,
+     "fact": 0.3392158110204322,
+     "slot": 0.27193350242469694,
+     "person": -0.0188388442222176
+    },
+    "active_pays": {
+     "fact_x_slot": 0.7019521760490582,
+     "fact_plus_slot": 0.6544017307914055,
+     "fact": 0.32587579990899584,
+     "slot": 0.32852593088240833,
+     "person": -0.017343188992413605
+    },
+    "passive_loves": {
+     "fact_x_slot": 0.6121446299266474,
+     "fact_plus_slot": 0.5770949088413597,
+     "fact": 0.3657820094228049,
+     "slot": 0.21131289941855635,
+     "person": -0.015702051670188233
+    },
+    "passive_trusts": {
+     "fact_x_slot": 0.6202042218606025,
+     "fact_plus_slot": 0.57701508492624,
+     "fact": 0.3859342788430947,
+     "slot": 0.19108080608314426,
+     "person": -0.01267644752024566
+    },
+    "passive_helps": {
+     "fact_x_slot": 0.6574006973175293,
+     "fact_plus_slot": 0.6045896888909954,
+     "fact": 0.3337415537155477,
+     "slot": 0.2708481351754475,
+     "person": -0.014879197679599221
+    },
+    "passive_visits": {
+     "fact_x_slot": 0.6625632783745399,
+     "fact_plus_slot": 0.6129060982107908,
+     "fact": 0.32490111498798113,
+     "slot": 0.2880049832228112,
+     "person": -0.013317059807439913
+    },
+    "passive_pays": {
+     "fact_x_slot": 0.6756284614318881,
+     "fact_plus_slot": 0.6100370241564071,
+     "fact": 0.3421193257810401,
+     "slot": 0.2679176983753666,
+     "person": -0.010864892069528675
+    }
+   },
+   "fact_vector_cosine": {
+    "active_loves": {
+     "active_loves": 0.9999999999999242,
+     "active_trusts": 0.9730964795486718,
+     "active_helps": 0.952142523915072,
+     "active_visits": 0.9588044762180595,
+     "active_pays": 0.945585869711211,
+     "passive_loves": 0.902750854495091,
+     "passive_trusts": 0.8906418835204161,
+     "passive_helps": 0.88040442039357,
+     "passive_visits": 0.835103367185558,
+     "passive_pays": 0.8887699037000356
+    },
+    "active_trusts": {
+     "active_loves": 0.9730964795486718,
+     "active_trusts": 0.9999999999999137,
+     "active_helps": 0.9357348182472811,
+     "active_visits": 0.9434604629284654,
+     "active_pays": 0.9490986595890599,
+     "passive_loves": 0.8955451994505692,
+     "passive_trusts": 0.89618497560981,
+     "passive_helps": 0.8828034052271542,
+     "passive_visits": 0.8469653384223923,
+     "passive_pays": 0.8883460475767411
+    },
+    "active_helps": {
+     "active_loves": 0.952142523915072,
+     "active_trusts": 0.9357348182472811,
+     "active_helps": 0.999999999999929,
+     "active_visits": 0.9541967594576702,
+     "active_pays": 0.924585768484934,
+     "passive_loves": 0.8816801990061744,
+     "passive_trusts": 0.8846104335334052,
+     "passive_helps": 0.8710757633384816,
+     "passive_visits": 0.7995520137530616,
+     "passive_pays": 0.8595789454002786
+    },
+    "active_visits": {
+     "active_loves": 0.9588044762180595,
+     "active_trusts": 0.9434604629284654,
+     "active_helps": 0.9541967594576702,
+     "active_visits": 0.9999999999999258,
+     "active_pays": 0.9364001299239343,
+     "passive_loves": 0.9142050642029901,
+     "passive_trusts": 0.8975394811194505,
+     "passive_helps": 0.8799868617387455,
+     "passive_visits": 0.8504834137740787,
+     "passive_pays": 0.8847479147706275
+    },
+    "active_pays": {
+     "active_loves": 0.945585869711211,
+     "active_trusts": 0.9490986595890599,
+     "active_helps": 0.924585768484934,
+     "active_visits": 0.9364001299239343,
+     "active_pays": 0.999999999999924,
+     "passive_loves": 0.9062158075282462,
+     "passive_trusts": 0.8798462920383683,
+     "passive_helps": 0.914906981339285,
+     "passive_visits": 0.8818482860387881,
+     "passive_pays": 0.9174666265782366
+    },
+    "passive_loves": {
+     "active_loves": 0.902750854495091,
+     "active_trusts": 0.8955451994505692,
+     "active_helps": 0.8816801990061744,
+     "active_visits": 0.9142050642029901,
+     "active_pays": 0.9062158075282462,
+     "passive_loves": 0.9999999999999094,
+     "passive_trusts": 0.9621128159292226,
+     "passive_helps": 0.9385615313687842,
+     "passive_visits": 0.9231246875872499,
+     "passive_pays": 0.9405174829093271
+    },
+    "passive_trusts": {
+     "active_loves": 0.8906418835204161,
+     "active_trusts": 0.89618497560981,
+     "active_helps": 0.8846104335334052,
+     "active_visits": 0.8975394811194505,
+     "active_pays": 0.8798462920383683,
+     "passive_loves": 0.9621128159292226,
+     "passive_trusts": 0.9999999999999026,
+     "passive_helps": 0.898832475715678,
+     "passive_visits": 0.8811772599454035,
+     "passive_pays": 0.9160862139726794
+    },
+    "passive_helps": {
+     "active_loves": 0.88040442039357,
+     "active_trusts": 0.8828034052271542,
+     "active_helps": 0.8710757633384816,
+     "active_visits": 0.8799868617387455,
+     "active_pays": 0.914906981339285,
+     "passive_loves": 0.9385615313687842,
+     "passive_trusts": 0.898832475715678,
+     "passive_helps": 0.9999999999999157,
+     "passive_visits": 0.9270146922436271,
+     "passive_pays": 0.9415997941155977
+    },
+    "passive_visits": {
+     "active_loves": 0.835103367185558,
+     "active_trusts": 0.8469653384223923,
+     "active_helps": 0.7995520137530616,
+     "active_visits": 0.8504834137740787,
+     "active_pays": 0.8818482860387881,
+     "passive_loves": 0.9231246875872499,
+     "passive_trusts": 0.8811772599454035,
+     "passive_helps": 0.9270146922436271,
+     "passive_visits": 0.99999999999991,
+     "passive_pays": 0.8931773355191783
+    },
+    "passive_pays": {
+     "active_loves": 0.8887699037000356,
+     "active_trusts": 0.8883460475767411,
+     "active_helps": 0.8595789454002786,
+     "active_visits": 0.8847479147706275,
+     "active_pays": 0.9174666265782366,
+     "passive_loves": 0.9405174829093271,
+     "passive_trusts": 0.9160862139726794,
+     "passive_helps": 0.9415997941155977,
+     "passive_visits": 0.8931773355191783,
+     "passive_pays": 0.9999999999999137
+    }
+   },
+   "slot_vector_cosine": {
+    "active_loves": {
+     "active_loves": 0.9999999999999457,
+     "active_trusts": 0.9520690699233719,
+     "active_helps": 0.8825790226446822,
+     "active_visits": 0.8811170820624031,
+     "active_pays": 0.90440991891085,
+     "passive_loves": 0.13265399109027717,
+     "passive_trusts": 0.3667942663029942,
+     "passive_helps": -0.17222134996417537,
+     "passive_visits": -0.1052536868275883,
+     "passive_pays": -0.11457443242120688
+    },
+    "active_trusts": {
+     "active_loves": 0.9520690699233719,
+     "active_trusts": 0.9999999999999529,
+     "active_helps": 0.8046759987459631,
+     "active_visits": 0.8303782735881114,
+     "active_pays": 0.8637654907333969,
+     "passive_loves": 0.06384368265765855,
+     "passive_trusts": 0.4189387746831118,
+     "passive_helps": -0.27549648090773493,
+     "passive_visits": -0.17913280538593312,
+     "passive_pays": -0.19698990376419
+    },
+    "active_helps": {
+     "active_loves": 0.8825790226446822,
+     "active_trusts": 0.8046759987459631,
+     "active_helps": 0.9999999999999499,
+     "active_visits": 0.8759350527130679,
+     "active_pays": 0.8958716168556394,
+     "passive_loves": 0.1931502813667605,
+     "passive_trusts": 0.22395907587075464,
+     "passive_helps": 0.0748666512696529,
+     "passive_visits": 0.10127606524457397,
+     "passive_pays": 0.03449487945322864
+    },
+    "active_visits": {
+     "active_loves": 0.8811170820624031,
+     "active_trusts": 0.8303782735881114,
+     "active_helps": 0.8759350527130679,
+     "active_visits": 0.9999999999999449,
+     "active_pays": 0.8716897294764977,
+     "passive_loves": 0.14555225584857082,
+     "passive_trusts": 0.2112936055365319,
+     "passive_helps": -0.02371103593496161,
+     "passive_visits": 0.10632368665464428,
+     "passive_pays": -0.07874282459417567
+    },
+    "active_pays": {
+     "active_loves": 0.90440991891085,
+     "active_trusts": 0.8637654907333969,
+     "active_helps": 0.8958716168556394,
+     "active_visits": 0.8716897294764977,
+     "active_pays": 0.9999999999999524,
+     "passive_loves": 0.14647996114589198,
+     "passive_trusts": 0.30445963191865805,
+     "passive_helps": -0.0843861438769567,
+     "passive_visits": -0.027506426793976666,
+     "passive_pays": 0.01654405346431999
+    },
+    "passive_loves": {
+     "active_loves": 0.13265399109027717,
+     "active_trusts": 0.06384368265765855,
+     "active_helps": 0.1931502813667605,
+     "active_visits": 0.14555225584857082,
+     "active_pays": 0.14647996114589198,
+     "passive_loves": 0.9999999999999003,
+     "passive_trusts": 0.6396370629368507,
+     "passive_helps": 0.7213366876350408,
+     "passive_visits": 0.7102857067273228,
+     "passive_pays": 0.7551923531213158
+    },
+    "passive_trusts": {
+     "active_loves": 0.3667942663029942,
+     "active_trusts": 0.4189387746831118,
+     "active_helps": 0.22395907587075464,
+     "active_visits": 0.2112936055365319,
+     "active_pays": 0.30445963191865805,
+     "passive_loves": 0.6396370629368507,
+     "passive_trusts": 0.9999999999998901,
+     "passive_helps": 0.15208327768572516,
+     "passive_visits": 0.2298710154608891,
+     "passive_pays": 0.37568841441894935
+    },
+    "passive_helps": {
+     "active_loves": -0.17222134996417537,
+     "active_trusts": -0.27549648090773493,
+     "active_helps": 0.0748666512696529,
+     "active_visits": -0.02371103593496161,
+     "active_pays": -0.0843861438769567,
+     "passive_loves": 0.7213366876350408,
+     "passive_trusts": 0.15208327768572516,
+     "passive_helps": 0.999999999999932,
+     "passive_visits": 0.8635172685878988,
+     "passive_pays": 0.7646280263571196
+    },
+    "passive_visits": {
+     "active_loves": -0.1052536868275883,
+     "active_trusts": -0.17913280538593312,
+     "active_helps": 0.10127606524457397,
+     "active_visits": 0.10632368665464428,
+     "active_pays": -0.027506426793976666,
+     "passive_loves": 0.7102857067273228,
+     "passive_trusts": 0.2298710154608891,
+     "passive_helps": 0.8635172685878988,
+     "passive_visits": 0.999999999999932,
+     "passive_pays": 0.6216963161133485
+    },
+    "passive_pays": {
+     "active_loves": -0.11457443242120688,
+     "active_trusts": -0.19698990376419,
+     "active_helps": 0.03449487945322864,
+     "active_visits": -0.07874282459417567,
+     "active_pays": 0.01654405346431999,
+     "passive_loves": 0.7551923531213158,
+     "passive_trusts": 0.37568841441894935,
+     "passive_helps": 0.7646280263571196,
+     "passive_visits": 0.6216963161133485,
+     "passive_pays": 0.9999999999999257
+    }
+   }
+  }
+ }
+}

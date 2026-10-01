@@ -1,0 +1,347 @@
+{
+ "description": "Table 7. receivers: designated answers when receivers state the four facts as a paragraph (prose) or as a list, for ordinal vectors calibrated on the main-text lists (lists_main), on lists of 16 new word sets (lists_new_word_sets), or on paragraphs of those word sets (prose). geometry: leave-one-word-set-out R^2 on paragraphs and matched lists, prose-list template and vector cosines, and the share of the squared norm of query-dependent prose states inside the span of the main-text ordinal vectors (random: random subspaces).",
+ "models": {
+  "qwen7b": {
+   "main_block": 20,
+   "receivers": {
+    "prose": {
+     "unedited": {
+      "mean": 0.99658203125,
+      "ci": [
+       0.994140625,
+       0.998779296875
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.44539388020833337,
+      "ci": [
+       0.42716471354166663,
+       0.4634602864583333
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.43977864583333337,
+      "ci": [
+       0.42220052083333337,
+       0.45751953125
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.40169270833333337,
+      "ci": [
+       0.38630981445312496,
+       0.4163411458333333
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 0.000244140625,
+      "ci": [
+       0.0,
+       0.0005696614583333333
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.9280598958333333,
+      "ci": [
+       0.9104817708333334,
+       0.9432779947916666
+      ],
+      "cases": 12288
+     }
+    },
+    "list": {
+     "unedited": {
+      "mean": 0.9990234375,
+      "ci": [
+       0.9970703125,
+       1.0
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.8048502604166666,
+      "ci": [
+       0.7826334635416667,
+       0.8245463053385417
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.7813313802083333,
+      "ci": [
+       0.7584635416666667,
+       0.8024088541666666
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.41105143229166663,
+      "ci": [
+       0.3935546875,
+       0.4274922688802083
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.9544270833333333,
+      "ci": [
+       0.9374979654947917,
+       0.9680989583333334
+      ],
+      "cases": 12288
+     }
+    }
+   },
+   "geometry": {
+    "prose_fact_address_r2": 0.4527216850744127,
+    "prose_person_r2": -0.006415453046911601,
+    "list_fact_address_r2": 0.713078951807838,
+    "template_cosine_prose_list": 0.7611687509837586,
+    "vector_cosine_prose_list": 0.7470479439962507,
+    "prose_share_in_list_span": 0.3545272538091321,
+    "random_share": 0.0008131047917285978
+   }
+  },
+  "gemma4b": {
+   "main_block": 22,
+   "receivers": {
+    "prose": {
+     "unedited": {
+      "mean": 0.992431640625,
+      "ci": [
+       0.986083984375,
+       0.9970703125
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.423583984375,
+      "ci": [
+       0.41113281250000006,
+       0.43603515625
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.43359375,
+      "ci": [
+       0.421142578125,
+       0.44596354166666663
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.322509765625,
+      "ci": [
+       0.3102193196614583,
+       0.334881591796875
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 0.00048828125,
+      "ci": [
+       0.00016276041666666666,
+       0.0008951822916666666
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.9629720052083333,
+      "ci": [
+       0.953448486328125,
+       0.9713541666666666
+      ],
+      "cases": 12288
+     }
+    },
+    "list": {
+     "unedited": {
+      "mean": 0.996826171875,
+      "ci": [
+       0.993408203125,
+       0.999267578125
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.522216796875,
+      "ci": [
+       0.5082194010416667,
+       0.5354817708333334
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.5281575520833334,
+      "ci": [
+       0.5142415364583333,
+       0.5413431803385417
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.240966796875,
+      "ci": [
+       0.22892252604166669,
+       0.2522786458333333
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.9645182291666667,
+      "ci": [
+       0.955645751953125,
+       0.9732279459635416
+      ],
+      "cases": 12288
+     }
+    }
+   },
+   "geometry": {
+    "prose_fact_address_r2": 0.23197488209654926,
+    "prose_person_r2": -0.0053115000864285555,
+    "list_fact_address_r2": 0.3920619859211394,
+    "template_cosine_prose_list": 0.8132411576808033,
+    "vector_cosine_prose_list": 0.7955840329561115,
+    "prose_share_in_list_span": 0.1689434766361077,
+    "random_share": 0.0011574458406326594
+   }
+  },
+  "llama8b": {
+   "main_block": 15,
+   "receivers": {
+    "prose": {
+     "unedited": {
+      "mean": 0.99560546875,
+      "ci": [
+       0.991455078125,
+       0.998779296875
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.14005533854166669,
+      "ci": [
+       0.12890625,
+       0.1513692220052083
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.10205078125,
+      "ci": [
+       0.09293619791666666,
+       0.111328125
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.085205078125,
+      "ci": [
+       0.076416015625,
+       0.09423828125
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 8.138020833333333e-05,
+      "ci": [
+       0.0,
+       0.000244140625
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.8307291666666666,
+      "ci": [
+       0.815264892578125,
+       0.845703125
+      ],
+      "cases": 12288
+     }
+    },
+    "list": {
+     "unedited": {
+      "mean": 0.99755859375,
+      "ci": [
+       0.993408203125,
+       1.0
+      ],
+      "cases": 12288
+     },
+     "lists_main": {
+      "mean": 0.29288736979166663,
+      "ci": [
+       0.274493408203125,
+       0.311932373046875
+      ],
+      "cases": 12288
+     },
+     "lists_new_word_sets": {
+      "mean": 0.22412109375,
+      "ci": [
+       0.20768229166666669,
+       0.24088541666666666
+      ],
+      "cases": 12288
+     },
+     "prose": {
+      "mean": 0.1220703125,
+      "ci": [
+       0.11140747070312501,
+       0.13330078125
+      ],
+      "cases": 12288
+     },
+     "random_0": {
+      "mean": 8.138020833333333e-05,
+      "ci": [
+       0.0,
+       0.000244140625
+      ],
+      "cases": 12288
+     },
+     "ceiling": {
+      "mean": 0.8557942708333334,
+      "ci": [
+       0.8389485677083334,
+       0.8723978678385417
+      ],
+      "cases": 12288
+     }
+    }
+   },
+   "geometry": {
+    "prose_fact_address_r2": 0.33089589165354505,
+    "prose_person_r2": -0.009087824621315299,
+    "list_fact_address_r2": 0.5293357719408263,
+    "template_cosine_prose_list": 0.8423044562287616,
+    "vector_cosine_prose_list": 0.8083454770647694,
+    "prose_share_in_list_span": 0.3416523867589116,
+    "random_share": 0.0007409719374282769
+   }
+  }
+ }
+}

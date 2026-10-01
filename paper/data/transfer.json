@@ -1,0 +1,774 @@
+{
+ "description": "Table 1, Table 2 and the Figure 5a example. Rates are designated answers (fraction, mean over cases) with 95% word-set bootstrap intervals; cases and word_sets are the counts behind each rate. transfer: Table 1A; no_facts: Table 1B (all directions scaled to one length); donor_states: Table 1C (receiver's state replaced by a donor's); rearranged: Table 2 (person or relation change under two held-out arrangements). example: one Gemma-3-4B receiver/donor pair and its greedy outputs at blocks 22 and 33 (question_fact and designated_fact are 0-based orders of mention).",
+ "models": {
+  "qwen7b": {
+   "main_block": 20,
+   "transfer": {
+    "ordinal_vector": {
+     "mean": 0.8414713541666667,
+     "ci": [
+      0.820556640625,
+      0.8601888020833333
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.968994140625,
+     "ci": [
+      0.9547505696614584,
+      0.9807942708333334
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    }
+   },
+   "no_facts": {
+    "with_facts": {
+     "mean": 0.712890625,
+     "ci": [
+      0.671875,
+      0.751953125
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "question_alone": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_same_order": {
+     "mean": 0.025390625,
+     "ci": [
+      0.0146484375,
+      0.0380859375
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_shuffled": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.9443359375,
+     "ci": [
+      0.919921875,
+      0.966796875
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    }
+   },
+   "donor_states": {
+    "donor_asked_other_fact": {
+     "mean": 0.80859375,
+     "ci": [
+      0.7779541015625,
+      0.8386260986328125
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_asked_receiver_question": {
+     "mean": 0.0174560546875,
+     "ci": [
+      0.0096435546875,
+      0.0269775390625
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_word_sets": 16,
+    "receiver_word_sets": 64
+   },
+   "rearranged": {
+    "person": {
+     "original_pair": {
+      "mean": 0.08984375,
+      "ci": [
+       0.07861328125,
+       0.10107421875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.69677734375,
+      "ci": [
+       0.67431640625,
+       0.7197265625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.80859375,
+      "ci": [
+       0.78271484375,
+       0.8330078125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.90185546875,
+      "ci": [
+       0.884765625,
+       0.91845703125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    },
+    "relation": {
+     "original_pair": {
+      "mean": 0.22607421875,
+      "ci": [
+       0.21044921875,
+       0.2421875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.61572265625,
+      "ci": [
+       0.59423828125,
+       0.63671875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.6845703125,
+      "ci": [
+       0.66552734375,
+       0.7041015625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.77294921875,
+      "ci": [
+       0.7548828125,
+       0.7919921875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.05712890625,
+      "ci": [
+       0.04541015625,
+       0.0693359375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.06982421875,
+      "ci": [
+       0.05615234375,
+       0.083984375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    }
+   }
+  },
+  "gemma4b": {
+   "main_block": 22,
+   "transfer": {
+    "ordinal_vector": {
+     "mean": 0.5391438802083333,
+     "ci": [
+      0.5240885416666667,
+      0.5546875
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.9642740885416667,
+     "ci": [
+      0.9516581217447917,
+      0.9755879720052083
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    }
+   },
+   "no_facts": {
+    "with_facts": {
+     "mean": 0.4169921875,
+     "ci": [
+      0.392578125,
+      0.44140625
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "question_alone": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_same_order": {
+     "mean": 0.0126953125,
+     "ci": [
+      0.005859375,
+      0.0205078125
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_shuffled": {
+     "mean": 0.0009765625,
+     "ci": [
+      0.0,
+      0.0029296875
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.9794921875,
+     "ci": [
+      0.966796875,
+      0.990234375
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    }
+   },
+   "donor_states": {
+    "donor_asked_other_fact": {
+     "mean": 0.7197265625,
+     "ci": [
+      0.6925048828125,
+      0.7464630126953125
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_asked_receiver_question": {
+     "mean": 0.1390380859375,
+     "ci": [
+      0.1230438232421875,
+      0.1551513671875
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_word_sets": 16,
+    "receiver_word_sets": 64
+   },
+   "rearranged": {
+    "person": {
+     "original_pair": {
+      "mean": 0.17578125,
+      "ci": [
+       0.1669921875,
+       0.1845703125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.408203125,
+      "ci": [
+       0.39453125,
+       0.42236328125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.611328125,
+      "ci": [
+       0.5908203125,
+       0.6318359375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.79248046875,
+      "ci": [
+       0.77587890625,
+       0.81005859375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.0009765625,
+      "ci": [
+       0.0,
+       0.00244140625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.0009765625,
+      "ci": [
+       0.0,
+       0.00244140625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    },
+    "relation": {
+     "original_pair": {
+      "mean": 0.05517578125,
+      "ci": [
+       0.04296875,
+       0.06884765625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.19921875,
+      "ci": [
+       0.17088623046875,
+       0.2294921875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.4150390625,
+      "ci": [
+       0.38671875,
+       0.443359375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.736328125,
+      "ci": [
+       0.720703125,
+       0.75244140625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.00830078125,
+      "ci": [
+       0.00390625,
+       0.01318359375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.00732421875,
+      "ci": [
+       0.00390625,
+       0.01171875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    }
+   }
+  },
+  "llama8b": {
+   "main_block": 15,
+   "transfer": {
+    "ordinal_vector": {
+     "mean": 0.36214192708333337,
+     "ci": [
+      0.34586385091145827,
+      0.3787455240885417
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 8.138020833333333e-05,
+     "ci": [
+      0.0,
+      0.000244140625
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 8.138020833333333e-05,
+     "ci": [
+      0.0,
+      0.000244140625
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.9191080729166667,
+     "ci": [
+      0.8999837239583334,
+      0.9366861979166667
+     ],
+     "cases": 12288,
+     "word_sets": 64
+    }
+   },
+   "no_facts": {
+    "with_facts": {
+     "mean": 0.1025390625,
+     "ci": [
+      0.0830078125,
+      0.1240234375
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "question_alone": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_same_order": {
+     "mean": 0.0390625,
+     "ci": [
+      0.0263671875,
+      0.0537109375
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "names_shuffled": {
+     "mean": 0.001953125,
+     "ci": [
+      0.0,
+      0.0048828125
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "random_1": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.931640625,
+     "ci": [
+      0.9062255859375,
+      0.9541015625
+     ],
+     "cases": 1024,
+     "word_sets": 64
+    }
+   },
+   "donor_states": {
+    "donor_asked_other_fact": {
+     "mean": 0.512939453125,
+     "ci": [
+      0.4818115234375,
+      0.5428466796875
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_asked_receiver_question": {
+     "mean": 0.0611572265625,
+     "ci": [
+      0.0496826171875,
+      0.0723876953125
+     ],
+     "cases": 8192,
+     "word_sets": 64
+    },
+    "donor_word_sets": 16,
+    "receiver_word_sets": 64
+   },
+   "rearranged": {
+    "person": {
+     "original_pair": {
+      "mean": 0.06201171875,
+      "ci": [
+       0.04833984375,
+       0.076171875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.15673828125,
+      "ci": [
+       0.12939453125,
+       0.18505859375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.16357421875,
+      "ci": [
+       0.13671875,
+       0.1923828125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.29833984375,
+      "ci": [
+       0.26220703125,
+       0.33544921875
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    },
+    "relation": {
+     "original_pair": {
+      "mean": 0.00732421875,
+      "ci": [
+       0.0029296875,
+       0.01220703125
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "new_order_of_mention": {
+      "mean": 0.005859375,
+      "ci": [
+       0.0029296875,
+       0.00927734375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "recalibrated": {
+      "mean": 0.02783203125,
+      "ci": [
+       0.01708984375,
+       0.0400390625
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "ceiling": {
+      "mean": 0.1181640625,
+      "ci": [
+       0.09764404296875001,
+       0.14014892578124982
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "random": {
+      "mean": 0.0029296875,
+      "ci": [
+       0.00048828125,
+       0.005859375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     },
+     "no_facts": {
+      "mean": 0.0029296875,
+      "ci": [
+       0.00048828125,
+       0.005859375
+      ],
+      "cases": 2048,
+      "word_sets": 64
+     }
+    }
+   }
+  }
+ },
+ "example": {
+  "model_key": "gemma4b",
+  "block_main": 22,
+  "block_late": 33,
+  "receiver": {
+   "context": "Irene Sutton eats the apple crumble.\nGraham Terry eats the pear tart.\nJoyce Vincent eats the cherry cobbler.\nHarry White eats the peach crisp.",
+   "question": "What does Irene Sutton eat?",
+   "designated_answer": "pear tart"
+  },
+  "donor": {
+   "context": "Angela Fletcher eats the grilled salmon.\nAustin Gray eats the baked trout.\nBernadette Hill eats the smoked haddock.\nBradley Johns eats the fried cod.",
+   "question": "What does Austin Gray eat?",
+   "answer": "baked trout"
+  },
+  "question_fact": 0,
+  "designated_fact": 1,
+  "outputs": [
+   {
+    "block": 22,
+    "edit": "ordinal_vector",
+    "answer": "pear tart",
+    "truncated": false
+   },
+   {
+    "block": 22,
+    "edit": "donor_state",
+    "answer": "pear tart",
+    "truncated": false
+   },
+   {
+    "block": 33,
+    "edit": "ordinal_vector",
+    "answer": "apple crumble",
+    "truncated": false
+   },
+   {
+    "block": 33,
+    "edit": "donor_state",
+    "answer": "baked apple crumble",
+    "truncated": false
+   }
+  ]
+ }
+}

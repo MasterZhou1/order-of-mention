@@ -1,0 +1,24 @@
+{
+ "description": "Figure 1(b): one calibration context (eats), the receiving context (owns), and the greedy answers without and with the ordinal vector v^{1->2} added once at block 20 of Qwen2.5-7B-Instruct. direction '0>1': from the first to the second order of mention (zero-based).",
+ "model": "Qwen2.5-7B-Instruct",
+ "model_key": "qwen7b",
+ "block": 20,
+ "calibration_example": {
+  "context": "Helen Rhodes eats the chana masala.\nGavin Spencer eats the roast pork.\nGail Noble eats the cheese pizza.\nGary Preston eats the steamed pork buns.",
+  "questions": [
+   "What does Helen Rhodes eat?",
+   "What does Gavin Spencer eat?"
+  ]
+ },
+ "receiver": {
+  "context": "Duncan Hardy owns a sloth.\nCatherine Eaton owns a penguin.\nCarl Francis owns a scorpion.\nDorothy Glover owns an emu.",
+  "question": "Which animal does Duncan Hardy own?"
+ },
+ "unedited": {
+  "answer": "sloth"
+ },
+ "edited": {
+  "answer": "penguin",
+  "direction": "0>1"
+ }
+}

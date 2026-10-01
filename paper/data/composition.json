@@ -1,0 +1,284 @@
+{
+ "description": "Table 3: person x relation contexts, 64 test word sets. joint: the calibrated change of both person and relation (v_J); same_start_sum: v_E + v_R from the same starting cell; sum_rescaled: that sum rescaled to ||v_J||; ceiling: the receiver's own state for the joint question; paired: joint minus sum differences with 95% paired word-set bootstrap intervals.",
+ "models": {
+  "qwen7b": {
+   "main_block": 20,
+   "edits": {
+    "joint": {
+     "mean": 0.685302734375,
+     "ci": [
+      0.661376953125,
+      0.708984375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "same_start_sum": {
+     "mean": 0.4384765625,
+     "ci": [
+      0.42236328125,
+      0.454833984375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "sum_rescaled": {
+     "mean": 0.35302734375,
+     "ci": [
+      0.334716796875,
+      0.3720703125
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.878662109375,
+     "ci": [
+      0.862548828125,
+      0.893798828125
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "person_only": {
+     "mean": 0.750732421875,
+     "ci": [
+      0.73046875,
+      0.771240234375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "relation_only": {
+     "mean": 0.650390625,
+     "ci": [
+      0.63427734375,
+      0.6674865722656249
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "unedited": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    }
+   },
+   "paired": {
+    "joint_minus_sum": {
+     "mean": 0.246826171875,
+     "ci": [
+      0.23291015625,
+      0.260009765625
+     ]
+    },
+    "joint_minus_rescaled_sum": {
+     "mean": 0.332275390625,
+     "ci": [
+      0.316650390625,
+      0.347900390625
+     ]
+    }
+   }
+  },
+  "gemma4b": {
+   "main_block": 22,
+   "edits": {
+    "joint": {
+     "mean": 0.5712890625,
+     "ci": [
+      0.549072265625,
+      0.59326171875
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "same_start_sum": {
+     "mean": 0.440185546875,
+     "ci": [
+      0.421380615234375,
+      0.45849609375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "sum_rescaled": {
+     "mean": 0.3173828125,
+     "ci": [
+      0.300048828125,
+      0.334716796875
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.907470703125,
+     "ci": [
+      0.89306640625,
+      0.9209045410156249
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "person_only": {
+     "mean": 0.681640625,
+     "ci": [
+      0.648681640625,
+      0.71240234375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "relation_only": {
+     "mean": 0.4130859375,
+     "ci": [
+      0.38916015625,
+      0.43896484375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "unedited": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    }
+   },
+   "paired": {
+    "joint_minus_sum": {
+     "mean": 0.131103515625,
+     "ci": [
+      0.117431640625,
+      0.144287109375
+     ]
+    },
+    "joint_minus_rescaled_sum": {
+     "mean": 0.25390625,
+     "ci": [
+      0.239990234375,
+      0.26806640625
+     ]
+    }
+   }
+  },
+  "llama8b": {
+   "main_block": 15,
+   "edits": {
+    "joint": {
+     "mean": 0.260009765625,
+     "ci": [
+      0.244873046875,
+      0.2744140625
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "same_start_sum": {
+     "mean": 0.1884765625,
+     "ci": [
+      0.176513671875,
+      0.2001953125
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "sum_rescaled": {
+     "mean": 0.140869140625,
+     "ci": [
+      0.128900146484375,
+      0.15283203125
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "ceiling": {
+     "mean": 0.56689453125,
+     "ci": [
+      0.544189453125,
+      0.5888732910156249
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "person_only": {
+     "mean": 0.299560546875,
+     "ci": [
+      0.274163818359375,
+      0.325927734375
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "relation_only": {
+     "mean": 0.07373046875,
+     "ci": [
+      0.061279296875,
+      0.08642578125
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "random_0": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    },
+    "unedited": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cases": 4096,
+     "word_sets": 64
+    }
+   },
+   "paired": {
+    "joint_minus_sum": {
+     "mean": 0.071533203125,
+     "ci": [
+      0.062255859375,
+      0.08056640625
+     ]
+    },
+    "joint_minus_rescaled_sum": {
+     "mean": 0.119140625,
+     "ci": [
+      0.108642578125,
+      0.12939453125
+     ]
+    }
+   }
+  }
+ }
+}
