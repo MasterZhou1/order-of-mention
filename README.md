@@ -2,7 +2,7 @@
 
 **Yufa Zhou**, Duke University
 
-arXiv: (link to be added)
+[arXiv:2610.00910](https://arxiv.org/abs/2610.00910)
 
 Human reasoning depends on how objects are related within propositions. How do relations organize the language
 representations of contextual contents? We give an LLM a list of facts in its context (*Alice eats an apple. Bob eats
@@ -195,7 +195,7 @@ with its native chat template in FP32.
 @article{zhou2026geometry,
   title={The Geometry of Contextual Relations: Language Models Address Facts by Order of Mention},
   author={Zhou, Yufa},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2610.00910},
   year={2026}
 }
 ```
